@@ -9,6 +9,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
+
+    <nav>
+            <a href='#' class ="addTransaction">+</a>
+            <div id="transactionForm">
+                    <label>Date: <input type="date" required></label>
+                    <label>Description: <input type="text" placeholder="Enter Transaction Description"></label>
+                    <label>Category: 
+                        <select>
+                            <option value="Food">Food</option>
+                            <option value="Entertainment">Entertainment</option>
+                            <option value="Bills">Bills</option>
+                            <option value="Clothing">Clothing</option>
+                        </select></label>
+                    <label>Amount: $<input type="number" min="0.01" step="0.01"></label>
+                </form>
+            </div> 
+    </nav>
+
     <body>
         <h2>Budget Buddy</h2>
         <section id= PieChart>
@@ -17,8 +35,6 @@
             <div class= Bills></div>
             <div class= Clothing></div>
         </section>
-        
-
         
         <script src="script.js" async defer></script>
     </body>
