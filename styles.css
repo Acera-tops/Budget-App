@@ -5,3 +5,16 @@ main{
     color: pink;
     padding: 40px;
 }
+
+h2{
+    text-align: center;
+}
+
+th{
+    border: 1px groove lightgray;
+    border-radius:7%;
+}
+
+td{
+    text-align: center;
+}
