@@ -1,4 +1,7 @@
-main {
+main{
+    background-color: steelblue;
+    font-weight: bold;
     font-size: 40px;
     color: pink;
+    padding: 40px;
 }
