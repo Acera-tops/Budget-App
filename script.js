@@ -42,7 +42,7 @@ let transactionHistory = [
    generateTableHead(table, data);
 
 
-//array.unshift(Date, Description, Category, Amount) - adding to array
+//transactionHistory.unshift(Date, Description, Category, Amount) - adding to array from form
 
 // For future reference - array.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
 
