@@ -3,13 +3,13 @@ let transactionHistory = [
     Date: "12/15/2020",
     Description: "DTE Energy",
     Category: "Bills",
-    Amount: 68.50,
+    Amount: "$68.50",
    }, 
    {
     Date: "12/01/2020",
     Description: "Movies",
     Category: "Entertainment",
-    Amount: 7.99,
+    Amount: "$7.99",
    }, 
 ];
 
@@ -42,9 +42,13 @@ let transactionHistory = [
    generateTableHead(table, data);
 
 
+<<<<<<< HEAD
 //transactionHistory.unshift(Date, Description, Category, Amount) - adding to array from form
 
 //transactionHistory.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.  i.e. Bills == True
+=======
+// - array.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
+>>>>>>> tiffanys-branch
 
 
 
@@ -62,36 +66,22 @@ transForm.addEventListener('submit', function(e) {
    const formData = new FormData(transForm);
 
    const transDate = formData.get('transDate');
-   console.log(transDate);
    const transDesc = formData.get('transDesc');
-   console.log(transDesc);
    const transCat = formData.get('transCat');
-   console.log(transCat);
    const transAmount = formData.get('transAmount');
-   console.log(transAmount);
-
-   //const newTrans = new addTransaction(transDate,transDesc,transCat,transAmount);
    
-   const newTrans = {
-      Date: transDate,
-      Description: transDesc,
-      Category: transCat,
-      Amount: transAmount
-   }
+  const newTrans ={
+     Date: transDate,
+     Description: transDesc,
+     Category: transCat,
+     Amount: transAmount
+  }
 
    transactionHistory.unshift(newTrans);
    console.log(transactionHistory);
-
-   //generateTable(table, transactionHistory);
-   //generateTableHead(table, data);
-   table.refresh();
    transForm.reset();
 
-
-
 });
-
-console.log(transactionHistory);
 
 //function to open the addTransaction menu
 function openForm(){
