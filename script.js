@@ -44,7 +44,7 @@ let transactionHistory = [
 
 //transactionHistory.unshift(Date, Description, Category, Amount) - adding to array from form
 
-//transactionHistory.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
+//transactionHistory.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.  i.e. Bills == True
 
 
 
