@@ -51,8 +51,6 @@ let transactionHistory = [
 >>>>>>> tiffanys-branch
 
 
-
-
 //Sources: https://www.valentinog.com/blog/html-table/
 
 
