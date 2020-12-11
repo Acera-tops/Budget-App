@@ -42,13 +42,9 @@ let transactionHistory = [
    generateTableHead(table, data);
 
 
-<<<<<<< HEAD
-//transactionHistory.unshift(Date, Description, Category, Amount) - adding to array from form
-
-//transactionHistory.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.  i.e. Bills == True
-=======
 // - array.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
->>>>>>> tiffanys-branch
+
+
 
 
 //Sources: https://www.valentinog.com/blog/html-table/
