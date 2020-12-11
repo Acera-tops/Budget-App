@@ -50,3 +50,50 @@ let transactionHistory = [
 
 
 //Sources: https://www.valentinog.com/blog/html-table/
+
+
+
+//define the form to be able to pull the data from it 
+const transForm = document.querySelector('#transaction');
+
+//function to add a transaction to the array 
+transForm.addEventListener('submit', function(e) {
+   e.preventDefault();
+   const formData = new FormData(transForm);
+
+   const transDate = formData.get('transDate');
+   console.log(transDate);
+   const transDesc = formData.get('transDesc');
+   console.log(transDesc);
+   const transCat = formData.get('transCat');
+   console.log(transCat);
+   const transAmount = formData.get('transAmount');
+   console.log(transAmount);
+
+   //const newTrans = new addTransaction(transDate,transDesc,transCat,transAmount);
+   
+   const newTrans = {
+      Date: transDate,
+      Description: transDesc,
+      Category: transCat,
+      Amount: transAmount
+   }
+
+   transactionHistory.unshift(newTrans);
+   console.log(transactionHistory);
+
+   //generateTable(table, transactionHistory);
+   //generateTableHead(table, data);
+   table.refresh();
+   transForm.reset();
+
+
+
+});
+
+console.log(transactionHistory);
+
+//function to open the addTransaction menu
+function openForm(){
+   document.getElementById("addTransactionForm").style.display ="block";
+}

@@ -6,6 +6,15 @@ nav{
     padding: 2%;
 }
 
+nav{
+    box-sizing: border-box;
+}
+
+/* #addTransactionForm{
+    display:none;
+} */
+
+h2{
 body{
     text-align: center;
     background-color:  #FFFFFA;
