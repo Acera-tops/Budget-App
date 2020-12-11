@@ -1,11 +1,12 @@
-main{
-    background-color: steelblue;
-    font-weight: bold;
-    font-size: 40px;
-    color: pink;
-    padding: 40px;
+nav{
+    background-color: #0D5C63;
+    color: #FFFFFA; 
+    font-family: candara, Arial, Helvetica, sans-serif;
+    width: 98%;
+    padding: 2%;
 }
 
+<<<<<<< HEAD
 nav{
     box-sizing: border-box;
 }
@@ -15,7 +16,19 @@ nav{
 } */
 
 h2{
+=======
+body{
+>>>>>>> 0e75fb7cb976ccc7b55d11bc9a04278b962f511c
     text-align: center;
+    background-color:  #FFFFFA;
+    color: #094348; 
+    font-family: candara, Arial, Helvetica, sans-serif;
+}
+
+h2{
+    width: 100%;
+    background-color: #0D5C63;
+    color: #FFFFFA;
 }
 
 table{
