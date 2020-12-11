@@ -4,17 +4,15 @@ nav{
     font-family: candara, Arial, Helvetica, sans-serif;
     width: 98%;
     padding: 2%;
-}
-
-nav{
     box-sizing: border-box;
 }
+
 
 /* #addTransactionForm{
     display:none;
 } */
 
-h2{
+
 body{
     text-align: center;
     background-color:  #FFFFFA;

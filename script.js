@@ -47,8 +47,6 @@ let transactionHistory = [
 //transactionHistory.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.  i.e. Bills == True
 
 
-
-
 //Sources: https://www.valentinog.com/blog/html-table/
 
 
