@@ -57,21 +57,26 @@ transForm.addEventListener('submit', function(e) {
    e.preventDefault();
    const formData = new FormData(transForm);
 
+   //pulling all data from form
    const transDate = formData.get('transDate');
    const transDesc = formData.get('transDesc');
    const transCat = formData.get('transCat');
    const transAmount = formData.get('transAmount');
    
-  const newTrans = [{
+   //creating an object array from the form data
+   const newTrans = [{
      Date: transDate,
      Description: transDesc,
      Category: transCat,
      Amount: "$" + transAmount,
-  }]
+   }]
 
+   //adding the form data to the array and updating the history
    transactionHistory.push(newTrans);
    console.log(transactionHistory);
    generateTable(table, newTrans);
+   
+   //clearing and closing the form
    transForm.reset();
    closeForm();
 
