@@ -74,7 +74,6 @@ transForm.addEventListener('submit', function(e) {
    transactionHistory.unshift(newTrans);
    console.log(transactionHistory);
    transForm.reset();
-
 });
 
 //function to open the addTransaction menu
