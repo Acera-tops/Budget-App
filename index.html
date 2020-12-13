@@ -11,11 +11,15 @@
     </head>
 
     <nav>
-            <button class = "addTransaction" onclick="openForm()">+</button>
+        <p id="addTransPara">Add Transaction</p>    
+        <button id = "addTransaction" onclick="openForm()">+</button>
+        <button id = "closeTransaction" onclick="closeForm()">-</button>
             <div id="addTransactionForm">
                 <form id="transaction">   
                     <label>Date: <input name="transDate" id="transDate" type="date" required></label>
                     <label>Description: <input name="transDesc" id="transDesc" type="text" placeholder="Enter Transaction Description" required></label>
+                    <!-- paragraph for spacer -->
+                    <p></p>
                     <label>Category: 
                         <select name="transCat" id="transCat" required>
                             <option value="" disabled selected>Choose a Category</option>
@@ -25,6 +29,8 @@
                             <option value="Clothing">Clothing</option>
                         </select></label>
                     <label>Amount: $<input name="transAmount" id="transAmount" type="number" min="0.01" step="0.01" required></label>
+                    <!--paragraph for spacer-->
+                    <p></p>
                     <button id="submit">Add Transaction</button>
                 </form>
             </div> 

@@ -73,10 +73,26 @@ transForm.addEventListener('submit', function(e) {
    console.log(transactionHistory);
    generateTable(table, newTrans);
    transForm.reset();
+   closeForm();
 
 });
 
 //function to open the addTransaction menu
 function openForm(){
-   document.getElementById("addTransactionForm").style.display ="block";
+   document.getElementById("transaction").style.display ="block";
+   document.getElementById("addTransPara").style.display ="none";
+   document.getElementById("closeTransaction").style.display ="block";
+   document.getElementById("addTransaction").style.display ="none";
+   document.querySelector("nav").style.height= "130px";
+
 }
+
+//function to close the addTransaction menu after submission
+function closeForm() {
+   document.getElementById("transaction").style.display = "none";
+   document.getElementById("addTransPara").style.display ="block";
+   document.getElementById("closeTransaction").style.display ="none";
+   document.getElementById("addTransaction").style.display ="block";
+   document.querySelector("nav").style.height= "80px";
+   transForm.reset();
+ }
