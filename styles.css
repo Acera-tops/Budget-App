@@ -1,0 +1,47 @@
+nav{
+    background-color: #0D5C63;
+    color: #FFFFFA; 
+    font-family: candara, Arial, Helvetica, sans-serif;
+    width: 98%;
+    padding: 2%;
+}
+
+nav{
+    box-sizing: border-box;
+}
+
+/* #addTransactionForm{
+    display:none;
+} */
+
+body{
+    text-align: center;
+    background-color:  #FFFFFA;
+    color: #094348; 
+    font-family: candara, Arial, Helvetica, sans-serif;
+}
+
+h2{
+    width: 100%;
+    background-color: #0D5C63;
+    color: #FFFFFA;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    border: 1px groove lightgray;
+    border-radius:7%;
+}
+
+td{
+    text-align: center;
+}
+
+
+
+/* @media only screen and (min-width: 768px) {
+    copy paste css above and ajust for desktop version
+} */
