@@ -4,9 +4,11 @@ nav{
     font-family: candara, Arial, Helvetica, sans-serif;
     width: 98%;
     padding: 2%;
-    box-sizing: border-box;
 }
 
+nav{
+    box-sizing: border-box;
+}
 
 /* #addTransactionForm{
     display:none;

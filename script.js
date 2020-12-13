@@ -45,8 +45,6 @@ let transactionHistory = [
 // - array.prototype.filter() - Returns a new array containing all elements of the calling array for which the provided filtering function returns true.
 
 
-
-
 //Sources: https://www.valentinog.com/blog/html-table/
 
 
@@ -64,15 +62,16 @@ transForm.addEventListener('submit', function(e) {
    const transCat = formData.get('transCat');
    const transAmount = formData.get('transAmount');
    
-  const newTrans ={
+  const newTrans = [{
      Date: transDate,
      Description: transDesc,
      Category: transCat,
-     Amount: transAmount
-  }
+     Amount: "$" + transAmount,
+  }]
 
-   transactionHistory.unshift(newTrans);
+   transactionHistory.push(newTrans);
    console.log(transactionHistory);
+   generateTable(table, newTrans);
    transForm.reset();
 
 });
