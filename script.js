@@ -101,3 +101,42 @@ function closeForm() {
    document.querySelector("nav").style.height= "80px";
    transForm.reset();
  }
+
+// Zina's part
+document
+    .querySelector('#update_income')
+    .addEventListener("click", updateBudget);
+
+
+// declaring variables to use in functions below. calling the Ids from the HTML
+let weeklyBudget = document.querySelector('#weekly_budget');
+let incomeInput = document.querySelector('#income_input');
+let remainingBalance = document.querySelector('#remaining_balance');
+let totalExpenses = document.querySelector('#total_expenses');
+
+
+let weeklyIncome = 0;
+let expenses = []; 
+let expenseTotal = 0;
+let balance = 0;
+
+function updateBudget(event) { 
+    event.preventDefault(); 
+    weeklyIncome = incomeInput.value; 
+    weeklyBudget.innerText = "$" + weeklyIncome;
+    incomeInput.value = ""; 
+    updateBalance();
+}
+
+function updateBalance() {
+    balance = weeklyIncome - expenseTotal;
+    remainingBalance.innerText = "$" + balance;
+    if (balance < 0) {
+        remainingBalance.classList.remove("green");
+        remainingBalance.classList.add("red");
+    } else {
+        remainingBalance.classList.remove("red");
+        remainingBalance.classList.add("green");
+    }
+}
+// end of Zina's part
