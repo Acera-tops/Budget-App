@@ -79,6 +79,12 @@ transForm.addEventListener("submit", function(e) {
    balance = Math.round((balance - transAmountNumber)*100)/100;
    updateBalance();
    updateExpenseTotal();
+ 
+   // ADD CATEGORY AMOUNTS 
+   //if transCat = "food", then += to food variable. innertext to html placeholder. 
+   //  if else transCat = "Entertainment", then += to entertainment variable. innterText to HTMLAllCollection
+   //  if else, bills
+   //  else clothing
 
 });
 
