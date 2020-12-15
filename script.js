@@ -88,7 +88,7 @@ function openForm(){
    document.getElementById("addTransPara").style.display ="none";
    document.getElementById("closeTransaction").style.display ="block";
    document.getElementById("addTransaction").style.display ="none";
-   document.querySelector("nav").style.height= "130px";
+   document.querySelector("nav").style.height= "140px";
 
 }
 
