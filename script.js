@@ -74,6 +74,11 @@ transForm.addEventListener('submit', function(e) {
    transForm.reset();
    closeForm();
 
+   const transAmountNumber = Math.round(Number(transAmount) *100)/100;
+   expenseTotal = expenseTotal + transAmountNumber;
+   console.log(transAmountNumber);
+   balance = balance - transAmountNumber
+   updateBalance();
 });
 
 //function to open the addTransaction menu
@@ -82,7 +87,7 @@ function openForm(){
    document.getElementById("addTransPara").style.display ="none";
    document.getElementById("closeTransaction").style.display ="block";
    document.getElementById("addTransaction").style.display ="none";
-   document.querySelector("nav").style.height= "130px";
+   document.querySelector("nav").style.height= "140px";
 
 }
 
@@ -110,7 +115,7 @@ let totalExpenses = document.querySelector('#total_expenses');
 
 
 let weeklyIncome = 0;
-let expenses = []; 
+let expenses = 0; 
 let expenseTotal = 0;
 let balance = 0;
 
@@ -128,6 +133,7 @@ function updateBalance() {
     if (balance < 0) {
         remainingBalance.classList.remove("green");
         remainingBalance.classList.add("red");
+        alert("You ran out of money! You can no longer purchase anything.");
     } else {
         remainingBalance.classList.remove("red");
         remainingBalance.classList.add("green");
