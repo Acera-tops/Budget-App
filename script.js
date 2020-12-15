@@ -74,12 +74,13 @@ transForm.addEventListener('submit', function(e) {
    transForm.reset();
    closeForm();
 
+<<<<<<< HEAD
+=======
+   //updates the total expenses and the Remaining Balance
+>>>>>>> bb28773d799c24fd47a4f0ecd5a3cdc9ed0e7bd1
    const transAmountNumber = Number(transAmount);
    expenseTotal = expenseTotal + transAmountNumber;
-   console.log(transAmountNumber);
-   console.log(expenseTotal);
    balance = balance - transAmountNumber;
-   console.log(balance);
    updateBalance();
    updateExpenseTotal();
 });
@@ -90,7 +91,7 @@ function openForm(){
    document.getElementById("addTransPara").style.display ="none";
    document.getElementById("closeTransaction").style.display ="block";
    document.getElementById("addTransaction").style.display ="none";
-   document.querySelector("nav").style.height= "130px";
+   document.querySelector("nav").style.height= "140px";
 
 }
 
@@ -133,9 +134,10 @@ function updateBudget(event) {
 function updateBalance() {
     balance = weeklyIncome - expenseTotal;
     remainingBalance.innerText = "$" + balance;
-    if (balance < 0) {
+    if (balance <= 0) {
         remainingBalance.classList.remove("green");
         remainingBalance.classList.add("red");
+        alert("You ran out of money! You can no longer purchase anything.");
     } else {
         remainingBalance.classList.remove("red");
         remainingBalance.classList.add("green");
