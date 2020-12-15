@@ -133,4 +133,6 @@ function updateBalance() {
         remainingBalance.classList.add("green");
     }
 }
+
+
 // end of Zina's part
