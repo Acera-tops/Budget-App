@@ -131,9 +131,10 @@ function updateBudget(event) {
 function updateBalance() {
     balance = weeklyIncome - expenseTotal;
     remainingBalance.innerText = "$" + balance;
-    if (balance < 0) {
+    if (balance <= 0) {
         remainingBalance.classList.remove("green");
         remainingBalance.classList.add("red");
+        alert("You ran out of money! You can no longer purchase anything.");
     } else {
         remainingBalance.classList.remove("red");
         remainingBalance.classList.add("green");
