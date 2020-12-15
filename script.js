@@ -47,7 +47,7 @@ let transactionHistory = [
 const transForm = document.querySelector('#transaction');
 
 //function to add a transaction to the array 
-transForm.addEventListener('submit', function(e) {
+transForm.addEventListener("submit", function(e) {
    e.preventDefault();
    const formData = new FormData(transForm);
 
