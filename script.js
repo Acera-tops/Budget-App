@@ -74,10 +74,7 @@ transForm.addEventListener('submit', function(e) {
    transForm.reset();
    closeForm();
 
-<<<<<<< HEAD
-=======
    //updates the total expenses and the Remaining Balance
->>>>>>> bb28773d799c24fd47a4f0ecd5a3cdc9ed0e7bd1
    const transAmountNumber = Number(transAmount);
    expenseTotal = expenseTotal + transAmountNumber;
    balance = balance - transAmountNumber;
