@@ -47,7 +47,7 @@ let transactionHistory = [
 const transForm = document.querySelector('#transaction');
 
 //function to add a transaction to the array 
-transForm.addEventListener('submit', function(e) {
+transForm.addEventListener("submit", function(e) {
    e.preventDefault();
    const formData = new FormData(transForm);
 
@@ -75,12 +75,11 @@ transForm.addEventListener('submit', function(e) {
    closeForm();
 
    const transAmountNumber = Number(transAmount);
-   expenseTotal = expenseTotal + transAmountNumber;
-   balance = balance - transAmountNumber;
+   expenseTotal = Math.round((expenseTotal + transAmountNumber)*100)/100;
+   balance = Math.round((balance - transAmountNumber)*100)/100;
    updateBalance();
    updateExpenseTotal();
 
-   document.getElementById("progressBar").style.width = "${balance}px";
 });
 
 //function to open the addTransaction menu
@@ -130,7 +129,7 @@ function updateBudget(event) {
 }
 
 function updateBalance() {
-    balance = weeklyIncome - expenseTotal;
+    balance = Math.round((weeklyIncome - expenseTotal)*100)/100;
     remainingBalance.innerText = "$" + balance;
     if (balance <= 0) {
         remainingBalance.classList.remove("green");
