@@ -74,11 +74,14 @@ transForm.addEventListener('submit', function(e) {
    transForm.reset();
    closeForm();
 
-   const transAmountNumber = Math.round(Number(transAmount) *100)/100;
+   const transAmountNumber = Number(transAmount);
    expenseTotal = expenseTotal + transAmountNumber;
    console.log(transAmountNumber);
-   balance = balance - transAmountNumber
+   console.log(expenseTotal);
+   balance = balance - transAmountNumber;
+   console.log(balance);
    updateBalance();
+   updateExpenseTotal();
 });
 
 //function to open the addTransaction menu
@@ -140,5 +143,8 @@ function updateBalance() {
     }
 }
 
+function updateExpenseTotal() {
+   totalExpenses.innerText = "$" + expenseTotal;
+ }
 
 // end of Zina's part
