@@ -80,6 +80,8 @@ transForm.addEventListener('submit', function(e) {
    balance = balance - transAmountNumber;
    updateBalance();
    updateExpenseTotal();
+
+   document.getElementById("progressBar").style.width = "${balance}px";
 });
 
 //function to open the addTransaction menu
