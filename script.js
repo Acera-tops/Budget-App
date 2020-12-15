@@ -29,7 +29,7 @@ let transactionHistory = [
       }
       }
    }
-   
+
    let table = document.querySelector("table");
    let data = Object.keys(transactionHistory[0]);
    generateTable(table, transactionHistory);
@@ -74,6 +74,7 @@ transForm.addEventListener('submit', function(e) {
    transForm.reset();
    closeForm();
 
+<<<<<<< HEAD
    const transAmountNumber = Number(transAmount);
    expenseTotal = expenseTotal + transAmountNumber;
    console.log(transAmountNumber);
@@ -82,6 +83,8 @@ transForm.addEventListener('submit', function(e) {
    console.log(balance);
    updateBalance();
    updateExpenseTotal();
+=======
+>>>>>>> 7dd1e733be277bc63b309ba0fe63d72b0bf8c867
 });
 
 //function to open the addTransaction menu
@@ -90,7 +93,7 @@ function openForm(){
    document.getElementById("addTransPara").style.display ="none";
    document.getElementById("closeTransaction").style.display ="block";
    document.getElementById("addTransaction").style.display ="none";
-   document.querySelector("nav").style.height= "140px";
+   document.querySelector("nav").style.height= "130px";
 
 }
 
@@ -118,7 +121,7 @@ let totalExpenses = document.querySelector('#total_expenses');
 
 
 let weeklyIncome = 0;
-let expenses = 0; 
+let expenses = []; 
 let expenseTotal = 0;
 let balance = 0;
 
@@ -136,15 +139,17 @@ function updateBalance() {
     if (balance < 0) {
         remainingBalance.classList.remove("green");
         remainingBalance.classList.add("red");
-        alert("You ran out of money! You can no longer purchase anything.");
     } else {
         remainingBalance.classList.remove("red");
         remainingBalance.classList.add("green");
     }
 }
+<<<<<<< HEAD
 
 function updateExpenseTotal() {
    totalExpenses.innerText = "$" + expenseTotal;
  }
 
+=======
+>>>>>>> 7dd1e733be277bc63b309ba0fe63d72b0bf8c867
 // end of Zina's part
