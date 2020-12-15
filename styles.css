@@ -125,6 +125,9 @@
             border: none;
             padding: 5px 10px;
         }
+
+}
+
 Button:hover {
     background-color: lightseagreen;
 }
@@ -136,4 +139,3 @@ Button:hover {
 .green{
     color: green;
 } 
-}
