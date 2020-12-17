@@ -128,7 +128,7 @@
 }
 
 nav{
-    background-color: #0D5C63;
+    background-color: #0e0c7c;
     color: #FFFFFA; 
     font-family: candara, Arial, Helvetica, sans-serif;
     width: 100%;
@@ -193,14 +193,14 @@ nav{
     body{
         text-align: center;
         background-color:  #FFFFFA;
-        color: #094348; 
+        color: #2c29f3; 
         font-family: candara, Arial, Helvetica, sans-serif;
     }
     
     
     h2{
         width: 100%;
-        background-color: #0D5C63;
+        background-color: #0e0c7c;
         color: #FFFFFA;
     }
     
