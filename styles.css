@@ -64,7 +64,7 @@ nav{
     body{
         text-align: center;
         background-color:  #FFFFFA;
-        color: #2c29f3; 
+        color: navy; 
         font-family: candara, Arial, Helvetica, sans-serif;
     }
     
@@ -106,7 +106,8 @@ nav{
 
 
 Button:hover {
-    background-color: lightseagreen;
+    background-color: navy;
+    color: white;
 }
 
 .red{
