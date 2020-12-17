@@ -69,19 +69,6 @@ transForm.addEventListener("submit", function(e) {
    transactionHistory.push(newTrans);
    console.log(transactionHistory);
    generateTable(table, newTrans);
-
-   if(transCat = "Food"){
-      foodTotal += transAmountNumber;
-   }
-   else if(transCat ="Entertainment"){
-      entertainmentTotal += transAmountNumber;
-   }
-   else if (transCat = "Bills"){
-      billsTotal += transAmountNumber;
-   }
-   else{
-      clothingTotal += transAmountNumber;
-   }
    
    //clearing and closing the form
    transForm.reset();
@@ -98,6 +85,20 @@ transForm.addEventListener("submit", function(e) {
    //  if else transCat = "Entertainment", then += to entertainment variable. innterText to HTMLAllCollection
    //  if else, bills
    //  else clothing
+
+   if(transCat === "Food"){
+      foodTotal += transAmountNumber;
+   }
+   else if(transCat ==="Entertainment"){
+      entertainmentTotal += transAmountNumber;
+   }
+   else if (transCat === "Bills"){
+      billsTotal += transAmountNumber;
+   }
+   else{
+      clothingTotal += transAmountNumber;
+   }
+
 
 });
 
