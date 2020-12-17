@@ -49,6 +49,7 @@ const transForm = document.querySelector('#transaction');
    let billsTotal = 0
    let clothingTotal = 0
    let entertainmentTotal = 0
+
 //function to add a transaction to the array 
 transForm.addEventListener("submit", function(e) {
    e.preventDefault();
@@ -103,7 +104,7 @@ transForm.addEventListener("submit", function(e) {
       clothingTotal += transAmountNumber;
    }
 
-
+updateCategories();
 });
 
 //function to open the addTransaction menu
@@ -168,5 +169,12 @@ function updateBalance() {
 function updateExpenseTotal() {
    totalExpenses.innerText = "$" + expenseTotal;
  }
+
+ function updateCategories() {
+   document.querySelector('#foodTransTotals').innerText = "Food: $" + foodTotal;
+   document.querySelector('#billsTransTotals').innerText = "Bills: $" + billsTotal;
+   document.querySelector('#clothingTransTotals').innerText = "Clothing: $" + clothingTotal;
+   document.querySelector('#entertainmentTransTotals').innerText = "Entertainment: $" + entertainmentTotal;
+}
 
 // end of Zina's part
