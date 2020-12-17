@@ -45,7 +45,10 @@ let transactionHistory = [
 
 //define the form to be able to pull the data from it 
 const transForm = document.querySelector('#transaction');
-
+   let foodTotal = 0
+   let billsTotal = 0
+   let clothingTotal = 0
+   let entertainmentTotal = 0
 //function to add a transaction to the array 
 transForm.addEventListener("submit", function(e) {
    e.preventDefault();
@@ -94,6 +97,7 @@ transForm.addEventListener("submit", function(e) {
    updateExpenseTotal();
  
    // ADD CATEGORY AMOUNTS 
+
    //if transCat = "food", then += to food variable. innertext to html placeholder. 
    //  if else transCat = "Entertainment", then += to entertainment variable. innterText to HTMLAllCollection
    //  if else, bills

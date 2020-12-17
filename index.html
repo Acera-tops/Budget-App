@@ -38,12 +38,12 @@
             </div> 
     </nav>
 
-    <h2>Budget Breakdown:</h2>
+    <h2>Budget Breakdown</h2>
     <div class="main" id="weekly_budget_section">
         <h3>Weekly Budget:</h3>
         <p id="weekly_budget"></p>
         <form>
-            <input type="number" id="income_input" placeholder="Weekly Income">
+            <input type="number" id="income_input" placeholder="Weekly Budget">
             <button id="update_income">Update Budget</button>
         </form>
     </div>
@@ -52,27 +52,31 @@
         <h3>Total Expenses:</h3>
         <p id="total_expenses"></p>
     </div>
-    
-    <!--ADD EXPENSE CATEGORY DIV HERE-->
+  
+    <!-- Make totals for each category -->
+    <div class="categories_totals">
+        <p id = "foodTransTotals">Food</p>
+        <p id= "billsTransTotals">Bills</p>
+        <p id = "entertainmentTransTotals">Entertinment</p>
+        <p id = "clothingTransTotals">Clothing</p>
+        </div>
+
 
     <div class="main" id="remaining_balance_section">
-        <h3>Remaining Balance</h3>
+        <h3>Remaining Balance:</h3>
         <p id="remaining_balance"></p>
     </div>
 
-    <!-- <div id="progressBar">
-
-    </div> -->
 
     <body>
-        <section id= PieChart>
+        <!-- <section id= PieChart>
             <div class= Food></div>
             <div class= Entertainment></div>
             <div class= Bills></div>
             <div class= Clothing></div>
-        </section>
+        </section> -->
         
-        <h2>Transaction History</h2>
+        <h2>Tansaction History</h2>
         <table>
             <!-- data populates from transactionHistory array -->
         </table>
